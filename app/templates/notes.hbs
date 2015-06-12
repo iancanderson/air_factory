@@ -1,0 +1,18 @@
+<h1>Notes ({{count}})</h1>
+
+{{#link-to "notes.new"}}Create a new note{{/link-to}}
+
+<br/>
+
+<ul>
+
+{{#each model as |note|}}
+  <li>
+  {{#link-to "notes.show" note}}
+    {{note.title}}
+  {{/link-to}}
+  </li>
+{{/each}}
+</ul>
+
+{{outlet}}

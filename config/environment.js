@@ -4,6 +4,8 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'air-factory',
     environment: environment,
+    contentSecurityPolicy: { 'connect-src': "'self' wss://*.firebaseio.com" },
+    firebase: 'https://sweltering-heat-150.firebaseio.com/',
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {
