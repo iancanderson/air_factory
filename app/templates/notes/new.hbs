@@ -1,5 +1,13 @@
 <form {{action "create" on="submit"}}>
+  <label>Title</label>
   {{input value=title}}
+  <br/>
+  <label>Body</label>
   {{textarea value=body}}
+  <br/>
   {{input type="submit" value="Submit"}}
 </form>
+
+<h3>Markdown Preview:</h3>
+{{markdown-section content=body}}
+
