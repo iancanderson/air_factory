@@ -1,3 +1,6 @@
-<section class="note-content">
+<section class="note">
+  {{#link-to "notes.edit" model}}
+    Edit
+  {{/link-to}}
   {{markdown-section content=model.body}}
 </section>

@@ -1,0 +1,12 @@
+<form {{action "update" on="submit"}}>
+  <label>Title</label>
+  {{input value=model.title}}
+  <br/>
+  <label>Body</label>
+  {{textarea value=model.body}}
+  <br/>
+  {{input type="submit" value="Submit"}}
+</form>
+
+<h3>Markdown Preview:</h3>
+{{markdown-section content=model.body}}

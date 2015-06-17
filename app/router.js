@@ -9,6 +9,7 @@ Router.map(function() {
   this.route("notes", { path: "/" }, function() {
     this.route("new");
     this.route("show", { path: "/:note_id" });
+    this.route("edit", { path: "/:note_id/edit" });
   });
 });
 
