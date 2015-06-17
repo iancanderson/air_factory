@@ -4,15 +4,14 @@
 
 <br/>
 
-<ul>
-
-{{#each model as |note|}}
-  <li>
-  {{#link-to "notes.show" note}}
-    {{note.title}}
-  {{/link-to}}
-  </li>
-{{/each}}
+<ul class="notes-list">
+  {{#each model as |note|}}
+    <li>
+    {{#link-to "notes.show" note}}
+      {{note.title}}
+    {{/link-to}}
+    </li>
+  {{/each}}
 </ul>
 
 {{outlet}}
